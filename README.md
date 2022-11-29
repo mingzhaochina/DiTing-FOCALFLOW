@@ -57,6 +57,7 @@ Questions and comments? Email Ming Zhao (mn244224@dal.ca)
 
 ### HASH:  
 Hardebeck, Jeanne L. and Peter M. Shearer, A new method for determining first- motion focal mechanisms, Bulletin of the Seismological Society of America, 92, 2264-2276, 2002.
+
 Hardebeck, Jeanne L. and Peter M. Shearer, Using S/P Amplitude Ratios to Constrain the Focal Mechanisms of Small Earthquakes, Bulletin of the Seismological Society of America, 93, 2434-2444, 2003.
 
 ### HASHPY2:
