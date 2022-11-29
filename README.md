@@ -50,7 +50,7 @@ cp hash_hashpy1D ..
 
 Users are free to make modifications to the programs to meet their particular needs, but are discouraged from distributing modified code to others without notification of the authors. If you find any part of the workflow useful, please cite our work or the corresponding publications of the packages.
 
-Dr. Xiao zhuowei designed and trained the DiTingMotion model,Dr. Miao Zhang provided the data download and preprocessing scripts,Dr .Zhao Yanna helped on obtaining and using the HASHpy2 code.
+Dr. Xiao zhuowei designed and trained the DiTingMotion model,Dr. Zhang Miao provided the data download and preprocessing scripts,Zhao Yanna helped on obtaining and using the HASHpy2 code.
 Questions and comments? Email Ming Zhao (mn244224@dal.ca)                                                                      
 
 ## References:
