@@ -21,7 +21,7 @@ python  1_get_waveforms.py
 ### second step: convert mseed data to sac data
 python 2_mseed2sac.py
 
-### third step: convert the hyperinverse 2000 format phase file( downloaded from https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php) to the format we want,and cut the P and S waveforms from each stations according to each events.
+### third step: convert the hyperinverse 2000 format phase file( downloaded from https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php) to the format we want to run Hash,and cut the P and S waveforms from each stations according to each events.
 ![Download phase file](./20221128232216.png)
 
 python 3_convert_hyperinverse_to_hash_phase.py 
