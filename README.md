@@ -1,5 +1,5 @@
 # DiTing-FOCALFLOW
-Earthquake Focal Mechanism Workflow[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4243987.svg)](https://doi.org/10.5281/zenodo.4243987)
+Earthquake Focal Mechanism Workflow[![DOI](https://zenodo.org/badge/571871454.svg)](https://zenodo.org/badge/latestdoi/571871454)
 
 ![DiTing-FOCALFLOW](./Fig_5-diting_focal_flow.png)
 
