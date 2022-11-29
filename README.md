@@ -46,29 +46,29 @@ cp hash_hashpy1D ..
 ![Bench ball figure](./20190704180616.human.focal.png)
 ============= 
 
-Announcements:
+## Announcements:
 
 Users are free to make modifications to the programs to meet their particular needs, but are discouraged from distributing modified code to others without notification of the authors. If you find any part of the workflow useful, please cite our work or the corresponding publications of the packages.
 
 Questions and comments? Email Ming Zhao (mn244224@dal.ca)                                                                      
 
-References:
+## References:
 
-HASH:  
+### HASH:  
 Hardebeck, Jeanne L. and Peter M. Shearer, A new method for determining first- motion focal mechanisms, Bulletin of the Seismological Society of America, 92, 2264-2276, 2002.
 Hardebeck, Jeanne L. and Peter M. Shearer, Using S/P Amplitude Ratios to Constrain the Focal Mechanisms of Small Earthquakes, Bulletin of the Seismological Society of America, 93, 2434-2444, 2003.
 
-HASHPY2:
+### HASHPY2:
 https://github.com/wsja/HASHpy2
 
-DiTingMotion:  
-Zhao, M., Xiao, Z. W.,Zhang, M., Yang, Y., Tang, L., Chen, S. (2019). DiTingMotion: a deep-learning first-motion-polarity classifier and its application to focal mechanism inversion.  
+### DiTingMotion:  
+Zhao, M., Xiao, Z. W.,Zhang, M., Yang, Y., Tang, L., Chen, S. (2019). DiTingMotion: a deep-learning first-motion-polarity classifier and its application to focal mechanism inversion (submitted).  
 
-DiTing Dataset:
+### DiTing Dataset:
 Zhao, M., Xiao, Z., Chen, S., & Fang, L. (2022). DiTing: a large-scale Chinese seismic benchmark dataset for artificial intelligence in seismology. Earthquake Science, 35, 1-11.
 
-SCSN Dataset:
+### SCSN Dataset:
 Ross, Z. E., Meier, M. A., & Hauksson, E. (2018). P Wave Arrival Picking and First-Motion Polarity Determination With Deep Learning. Journal of Geophysical Research: Solid Earth, 123(6), 5120–5129. https://doi.org/10.1029/2017JB015251.
 
-CA velocty model:
+### CA velocty model:
 Shelly, D. R. (2020).A High-Resolution Seismic Catalog for the Initial 2019 Ridgecrest Earthquake Sequence: Foreshocks, Aftershocks, and Faulting Complexity, Seismol. Res. Lett.91, 1971–1978, doi: 10.1785/0220190309.
