@@ -1,14 +1,14 @@
 # DiTing-FOCALFLOW
 Earthquake Focal Mechanism Workflow[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4243987.svg)](https://doi.org/10.5281/zenodo.4243987)
 
-![DiTing-FOCALFLOW](./Fig 5-diting_focal_flow.png)
+![DiTing-FOCALFLOW](./Fig_5-diting_focal_flow.png)
 
 ============= 
 
 DiTing-FOCALFLOW is a workflow to automatically obtain focal mechanisms from seismic data:  first we use "DiTingMotion",a deep-learning-based method, to determine the P wave Fisrt Motion Polarities(FMP) automatically,then we use HASH method to invert the FMP focal mechnism. The "DiTingMotion" was trained with the P-wave FMP labels from the "DiTing"  (Zhao et al., 2022) and SCSN-FMP datasets(Ross et al., 2018), and it achieved ~97.8% accuracy on both datasets. The model maintains ~83% accuracy on data labeled as “Emergent”, of which the FMP labels are challenging to identify for seismic analysts.
 
 The DiTingMotion confusion matrix on the test set of DiTing (left), SCSN-FMP (middle), and samples with “E” clarity from the DiTing dataset (right)
-![confusion matrix](./Fig.4-DiTingMotion Confusion Matrix on test sets.jpg)
+![confusion matrix](./Fig.4-DiTingMotion_Confusion_Matrix_on_test_sets.jpg)
 
 ============= 
 
