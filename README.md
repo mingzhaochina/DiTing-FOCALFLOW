@@ -13,7 +13,7 @@ The DiTingMotion confusion matrix on the test set of DiTing (left), SCSN-FMP (mi
 
 ============= 
 
-We use the 4 July 2019 Ridgecrest earthquake sequence in southern California as a case study.Here we teach step by step,from the origin data download to the final focal mechnism bench ball results.Users should have some background knowledge of python,anaconda.
+We use the 4 July 2019 Ridgecrest earthquake sequence in southern California as a case study.Here we teach step by step,from the origin data download to the final focal mechnism bench ball results.Users should have some background knowledge of python and anaconda.
 
 ### first step: download 4 July 2019's continous waveform using obspy fsdn services ,approximatly 38 stations' data will be downloaded.
 python  1_get_waveforms.py
