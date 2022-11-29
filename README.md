@@ -37,7 +37,9 @@ python 6_runhash.py
 
 Note that this script was modified from HASHpy2 (see references below). You probably need to compile the folder (./hash) and generate the command "hash_hashpy1D" on your own machine:
 cd hash
+
 make
+
 cp hash_hashpy1D ..
 
 
