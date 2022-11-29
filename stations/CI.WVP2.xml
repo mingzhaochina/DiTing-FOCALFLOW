@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.1" xsi:schemaLocation="http://www.fdsn.org/xml/station/1 http://www.fdsn.org/xml/station/fdsn-station-1.1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <Source>SCEDC</Source>
+ <Sender>SCEDC</Sender>
+ <Module>SCEDC WEB SERVICE: fdsnws-station | version: 1.1</Module>
+ <ModuleURI>http://service.scedc.caltech.edu/fdsnws/station/1/query?net=CI&amp;sta=WVP2&amp;cha=EHZ&amp;loc=--&amp;start=2019-07-04T00:00:00.000-07:00&amp;end=2019-07-05T00:00:00.000-07:00&amp;level=resp</ModuleURI>
+ <Created>2022-11-28T16:22:10</Created>
+ <Network code="CI" startDate="1900-01-01T00:00:00" endDate="3000-01-01T00:00:00">
+  <Description>Southern California Seismic Network</Description>
+  <TotalNumberStations>808</TotalNumberStations>
+  <SelectedNumberStations>1</SelectedNumberStations>
+  <Station code="WVP2" endDate="3000-01-01T00:00:00" startDate="2014-07-11T00:00:00">
+   <Latitude>35.94939</Latitude>
+   <Longitude>-117.81769</Longitude>
+   <Elevation>1465.0</Elevation>
+   <Site>
+    <Name>Volcano Peak 2</Name>
+   </Site>
+   <CreationDate>2014-07-11T00:00:00</CreationDate>
+   <Channel code="EHZ" endDate="3000-01-01T00:00:00" locationCode="" startDate="2016-10-06T19:00:00">
+    <Latitude>35.94939</Latitude>
+    <Longitude>-117.81769</Longitude>
+    <Elevation>1465.0</Elevation>
+    <Depth>1.8</Depth>
+    <Azimuth>0.0</Azimuth>
+    <Dip>-90.0</Dip>
+    <Type>TRIGGERED</Type>
+    <SampleRate>100.0</SampleRate>
+    <ClockDrift>0.01</ClockDrift>
+    <CalibrationUnits>
+     <Name>A</Name>
+     <Description>Amperes</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Description>L-4C VERTICAL,Velocity Transducer,SERCEL</Description>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>6.80413E7</Value>
+      <Frequency>10.0</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>VELOCITY in Meters per second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>VELOCITY in Meters per second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>VOLTAGE</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+       <NormalizationFactor>1.00285</NormalizationFactor>
+       <NormalizationFrequency>10</NormalizationFrequency>
+       <Zero number="0">
+        <Real>0</Real>
+        <Imaginary>0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real>0</Real>
+        <Imaginary>0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real>-5.0265</Real>
+        <Imaginary>3.76987</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real>-5.0265</Real>
+        <Imaginary>-3.76987</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>162.25</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <StageGain>
+       <Value>1</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>VOLTAGE</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>30000.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>419430</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <FIR>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </OutputUnits>
+       <Symmetry>ODD</Symmetry>
+       <NumeratorCoefficient i="0">0.000008482486</NumeratorCoefficient>
+       <NumeratorCoefficient i="1">0.00003890367</NumeratorCoefficient>
+       <NumeratorCoefficient i="2">0.0001093456</NumeratorCoefficient>
+       <NumeratorCoefficient i="3">0.0002269368</NumeratorCoefficient>
+       <NumeratorCoefficient i="4">0.0003658398</NumeratorCoefficient>
+       <NumeratorCoefficient i="5">0.0004479438</NumeratorCoefficient>
+       <NumeratorCoefficient i="6">0.0003462271</NumeratorCoefficient>
+       <NumeratorCoefficient i="7">-0.00007080892</NumeratorCoefficient>
+       <NumeratorCoefficient i="8">-0.0008515245</NumeratorCoefficient>
+       <NumeratorCoefficient i="9">-0.001858011</NumeratorCoefficient>
+       <NumeratorCoefficient i="10">-0.002705497</NumeratorCoefficient>
+       <NumeratorCoefficient i="11">-0.002812724</NumeratorCoefficient>
+       <NumeratorCoefficient i="12">-0.001603842</NumeratorCoefficient>
+       <NumeratorCoefficient i="13">0.001166563</NumeratorCoefficient>
+       <NumeratorCoefficient i="14">0.005081608</NumeratorCoefficient>
+       <NumeratorCoefficient i="15">0.008903252</NumeratorCoefficient>
+       <NumeratorCoefficient i="16">0.01075797</NumeratorCoefficient>
+       <NumeratorCoefficient i="17">0.008733747</NumeratorCoefficient>
+       <NumeratorCoefficient i="18">0.001773791</NumeratorCoefficient>
+       <NumeratorCoefficient i="19">-0.009436835</NumeratorCoefficient>
+       <NumeratorCoefficient i="20">-0.0219989</NumeratorCoefficient>
+       <NumeratorCoefficient i="21">-0.03108832</NumeratorCoefficient>
+       <NumeratorCoefficient i="22">-0.03111638</NumeratorCoefficient>
+       <NumeratorCoefficient i="23">-0.01752226</NumeratorCoefficient>
+       <NumeratorCoefficient i="24">0.01136141</NumeratorCoefficient>
+       <NumeratorCoefficient i="25">0.05307333</NumeratorCoefficient>
+       <NumeratorCoefficient i="26">0.1009941</NumeratorCoefficient>
+       <NumeratorCoefficient i="27">0.1457141</NumeratorCoefficient>
+       <NumeratorCoefficient i="28">0.1774811</NumeratorCoefficient>
+       <NumeratorCoefficient i="29">0.1889748</NumeratorCoefficient>
+      </FIR>
+      <Decimation>
+       <InputSampleRate>30000.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.001</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.00001</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="5">
+      <FIR>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </OutputUnits>
+       <Symmetry>ODD</Symmetry>
+       <NumeratorCoefficient i="0">0.00004134653</NumeratorCoefficient>
+       <NumeratorCoefficient i="1">0.0002349885</NumeratorCoefficient>
+       <NumeratorCoefficient i="2">0.0005912622</NumeratorCoefficient>
+       <NumeratorCoefficient i="3">0.0006531514</NumeratorCoefficient>
+       <NumeratorCoefficient i="4">-0.0004757065</NumeratorCoefficient>
+       <NumeratorCoefficient i="5">-0.002951484</NumeratorCoefficient>
+       <NumeratorCoefficient i="6">-0.004546653</NumeratorCoefficient>
+       <NumeratorCoefficient i="7">-0.001238158</NumeratorCoefficient>
+       <NumeratorCoefficient i="8">0.008109699</NumeratorCoefficient>
+       <NumeratorCoefficient i="9">0.01641842</NumeratorCoefficient>
+       <NumeratorCoefficient i="10">0.01052535</NumeratorCoefficient>
+       <NumeratorCoefficient i="11">-0.01547469</NumeratorCoefficient>
+       <NumeratorCoefficient i="12">-0.04536576</NumeratorCoefficient>
+       <NumeratorCoefficient i="13">-0.04280857</NumeratorCoefficient>
+       <NumeratorCoefficient i="14">0.02228518</NumeratorCoefficient>
+       <NumeratorCoefficient i="15">0.1410596</NumeratorCoefficient>
+       <NumeratorCoefficient i="16">0.258835</NumeratorCoefficient>
+       <NumeratorCoefficient i="17">0.308214</NumeratorCoefficient>
+      </FIR>
+      <Decimation>
+       <InputSampleRate>6000.0</InputSampleRate>
+       <Factor>3</Factor>
+       <Offset>0</Offset>
+       <Delay>0.003</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="6">
+      <FIR>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </OutputUnits>
+       <Symmetry>ODD</Symmetry>
+       <NumeratorCoefficient i="0">-0.0000004381873</NumeratorCoefficient>
+       <NumeratorCoefficient i="1">-0.000003853347</NumeratorCoefficient>
+       <NumeratorCoefficient i="2">-0.00001484947</NumeratorCoefficient>
+       <NumeratorCoefficient i="3">-0.00003029825</NumeratorCoefficient>
+       <NumeratorCoefficient i="4">-0.00002633035</NumeratorCoefficient>
+       <NumeratorCoefficient i="5">0.0000195019</NumeratorCoefficient>
+       <NumeratorCoefficient i="6">0.00006483635</NumeratorCoefficient>
+       <NumeratorCoefficient i="7">0.00001263851</NumeratorCoefficient>
+       <NumeratorCoefficient i="8">-0.0001171185</NumeratorCoefficient>
+       <NumeratorCoefficient i="9">-0.0000999528</NumeratorCoefficient>
+       <NumeratorCoefficient i="10">0.0001597786</NumeratorCoefficient>
+       <NumeratorCoefficient i="11">0.0002692947</NumeratorCoefficient>
+       <NumeratorCoefficient i="12">-0.0001490153</NumeratorCoefficient>
+       <NumeratorCoefficient i="13">-0.0005384982</NumeratorCoefficient>
+       <NumeratorCoefficient i="14">0.00001745438</NumeratorCoefficient>
+       <NumeratorCoefficient i="15">0.0009048996</NumeratorCoefficient>
+       <NumeratorCoefficient i="16">0.000324423</NumeratorCoefficient>
+       <NumeratorCoefficient i="17">-0.001331578</NumeratorCoefficient>
+       <NumeratorCoefficient i="18">-0.0009811022</NumeratorCoefficient>
+       <NumeratorCoefficient i="19">0.00173386</NumeratorCoefficient>
+       <NumeratorCoefficient i="20">0.002059</NumeratorCoefficient>
+       <NumeratorCoefficient i="21">-0.001968228</NumeratorCoefficient>
+       <NumeratorCoefficient i="22">-0.003648328</NumeratorCoefficient>
+       <NumeratorCoefficient i="23">0.001825851</NumeratorCoefficient>
+       <NumeratorCoefficient i="24">0.005803325</NumeratorCoefficient>
+       <NumeratorCoefficient i="25">-0.001029068</NumeratorCoefficient>
+       <NumeratorCoefficient i="26">-0.008523061</NumeratorCoefficient>
+       <NumeratorCoefficient i="27">-0.0007721158</NumeratorCoefficient>
+       <NumeratorCoefficient i="28">0.01173788</NumeratorCoefficient>
+       <NumeratorCoefficient i="29">0.004015945</NumeratorCoefficient>
+       <NumeratorCoefficient i="30">-0.01530432</NumeratorCoefficient>
+       <NumeratorCoefficient i="31">-0.009284528</NumeratorCoefficient>
+       <NumeratorCoefficient i="32">0.0190113</NumeratorCoefficient>
+       <NumeratorCoefficient i="33">0.01747212</NumeratorCoefficient>
+       <NumeratorCoefficient i="34">-0.02259768</NumeratorCoefficient>
+       <NumeratorCoefficient i="35">-0.03029474</NumeratorCoefficient>
+       <NumeratorCoefficient i="36">0.02577986</NumeratorCoefficient>
+       <NumeratorCoefficient i="37">0.05208679</NumeratorCoefficient>
+       <NumeratorCoefficient i="38">-0.02828568</NumeratorCoefficient>
+       <NumeratorCoefficient i="39">-0.09884663</NumeratorCoefficient>
+       <NumeratorCoefficient i="40">0.0298892</NumeratorCoefficient>
+       <NumeratorCoefficient i="41">0.3158372</NumeratorCoefficient>
+       <NumeratorCoefficient i="42">0.4695589</NumeratorCoefficient>
+      </FIR>
+      <Decimation>
+       <InputSampleRate>2000.0</InputSampleRate>
+       <Factor>2</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0215</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>0.999914</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="7">
+      <FIR>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </OutputUnits>
+       <Symmetry>ODD</Symmetry>
+       <NumeratorCoefficient i="0">-0.00000001257285</NumeratorCoefficient>
+       <NumeratorCoefficient i="1">-0.0000001052394</NumeratorCoefficient>
+       <NumeratorCoefficient i="2">-0.0000004852191</NumeratorCoefficient>
+       <NumeratorCoefficient i="3">-0.000001627486</NumeratorCoefficient>
+       <NumeratorCoefficient i="4">-0.000004362781</NumeratorCoefficient>
+       <NumeratorCoefficient i="5">-0.000009754673</NumeratorCoefficient>
+       <NumeratorCoefficient i="6">-0.00001852494</NumeratorCoefficient>
+       <NumeratorCoefficient i="7">-0.00002983585</NumeratorCoefficient>
+       <NumeratorCoefficient i="8">-0.00003954349</NumeratorCoefficient>
+       <NumeratorCoefficient i="9">-0.00003857445</NumeratorCoefficient>
+       <NumeratorCoefficient i="10">-0.00001276005</NumeratorCoefficient>
+       <NumeratorCoefficient i="11">0.00005418668</NumeratorCoefficient>
+       <NumeratorCoefficient i="12">0.0001732865</NumeratorCoefficient>
+       <NumeratorCoefficient i="13">0.0003388901</NumeratorCoefficient>
+       <NumeratorCoefficient i="14">0.0005164607</NumeratorCoefficient>
+       <NumeratorCoefficient i="15">0.0006358121</NumeratorCoefficient>
+       <NumeratorCoefficient i="16">0.0005977587</NumeratorCoefficient>
+       <NumeratorCoefficient i="17">0.0003004982</NumeratorCoefficient>
+       <NumeratorCoefficient i="18">-0.0003141919</NumeratorCoefficient>
+       <NumeratorCoefficient i="19">-0.00120507</NumeratorCoefficient>
+       <NumeratorCoefficient i="20">-0.002187045</NumeratorCoefficient>
+       <NumeratorCoefficient i="21">-0.002926119</NumeratorCoefficient>
+       <NumeratorCoefficient i="22">-0.002997959</NumeratorCoefficient>
+       <NumeratorCoefficient i="23">-0.002017401</NumeratorCoefficient>
+       <NumeratorCoefficient i="24">0.0001824549</NumeratorCoefficient>
+       <NumeratorCoefficient i="25">0.003374997</NumeratorCoefficient>
+       <NumeratorCoefficient i="26">0.006844246</NumeratorCoefficient>
+       <NumeratorCoefficient i="27">0.00944234</NumeratorCoefficient>
+       <NumeratorCoefficient i="28">0.009840647</NumeratorCoefficient>
+       <NumeratorCoefficient i="29">0.006952269</NumeratorCoefficient>
+       <NumeratorCoefficient i="30">0.0004290701</NumeratorCoefficient>
+       <NumeratorCoefficient i="31">-0.008923534</NumeratorCoefficient>
+       <NumeratorCoefficient i="32">-0.01898762</NumeratorCoefficient>
+       <NumeratorCoefficient i="33">-0.02655897</NumeratorCoefficient>
+       <NumeratorCoefficient i="34">-0.02798474</NumeratorCoefficient>
+       <NumeratorCoefficient i="35">-0.02010295</NumeratorCoefficient>
+       <NumeratorCoefficient i="36">-0.001249299</NumeratorCoefficient>
+       <NumeratorCoefficient i="37">0.02796922</NumeratorCoefficient>
+       <NumeratorCoefficient i="38">0.06440833</NumeratorCoefficient>
+       <NumeratorCoefficient i="39">0.1027805</NumeratorCoefficient>
+       <NumeratorCoefficient i="40">0.1366737</NumeratorCoefficient>
+       <NumeratorCoefficient i="41">0.1599653</NumeratorCoefficient>
+       <NumeratorCoefficient i="42">0.1682611</NumeratorCoefficient>
+      </FIR>
+      <Decimation>
+       <InputSampleRate>1000.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.043</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="8">
+      <FIR>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>DIGITAL UNIT in Counts</Description>
+       </OutputUnits>
+       <Symmetry>NONE</Symmetry>
+       <NumeratorCoefficient i="0">0.0001124213</NumeratorCoefficient>
+       <NumeratorCoefficient i="1">0.001235182</NumeratorCoefficient>
+       <NumeratorCoefficient i="2">0.006877938</NumeratorCoefficient>
+       <NumeratorCoefficient i="3">0.02547428</NumeratorCoefficient>
+       <NumeratorCoefficient i="4">0.06947334</NumeratorCoefficient>
+       <NumeratorCoefficient i="5">0.146035</NumeratorCoefficient>
+       <NumeratorCoefficient i="6">0.2402818</NumeratorCoefficient>
+       <NumeratorCoefficient i="7">0.3056799</NumeratorCoefficient>
+       <NumeratorCoefficient i="8">0.2828003</NumeratorCoefficient>
+       <NumeratorCoefficient i="9">0.1486739</NumeratorCoefficient>
+       <NumeratorCoefficient i="10">-0.04045983</NumeratorCoefficient>
+       <NumeratorCoefficient i="11">-0.1677391</NumeratorCoefficient>
+       <NumeratorCoefficient i="12">-0.1455157</NumeratorCoefficient>
+       <NumeratorCoefficient i="13">-0.004105358</NumeratorCoefficient>
+       <NumeratorCoefficient i="14">0.1203229</NumeratorCoefficient>
+       <NumeratorCoefficient i="15">0.1108233</NumeratorCoefficient>
+       <NumeratorCoefficient i="16">-0.01075069</NumeratorCoefficient>
+       <NumeratorCoefficient i="17">-0.1059172</NumeratorCoefficient>
+       <NumeratorCoefficient i="18">-0.07266476</NumeratorCoefficient>
+       <NumeratorCoefficient i="19">0.03992901</NumeratorCoefficient>
+       <NumeratorCoefficient i="20">0.09358743</NumeratorCoefficient>
+       <NumeratorCoefficient i="21">0.02914898</NumeratorCoefficient>
+       <NumeratorCoefficient i="22">-0.06471192</NumeratorCoefficient>
+       <NumeratorCoefficient i="23">-0.06857696</NumeratorCoefficient>
+       <NumeratorCoefficient i="24">0.01518681</NumeratorCoefficient>
+       <NumeratorCoefficient i="25">0.07175618</NumeratorCoefficient>
+       <NumeratorCoefficient i="26">0.0294078</NumeratorCoefficient>
+       <NumeratorCoefficient i="27">-0.04824792</NumeratorCoefficient>
+       <NumeratorCoefficient i="28">-0.05472183</NumeratorCoefficient>
+       <NumeratorCoefficient i="29">0.01335801</NumeratorCoefficient>
+       <NumeratorCoefficient i="30">0.05764577</NumeratorCoefficient>
+       <NumeratorCoefficient i="31">0.01904609</NumeratorCoefficient>
+       <NumeratorCoefficient i="32">-0.04288314</NumeratorCoefficient>
+       <NumeratorCoefficient i="33">-0.04007589</NumeratorCoefficient>
+       <NumeratorCoefficient i="34">0.01879662</NumeratorCoefficient>
+       <NumeratorCoefficient i="35">0.04654274</NumeratorCoefficient>
+       <NumeratorCoefficient i="36">0.006056782</NumeratorCoefficient>
+       <NumeratorCoefficient i="37">-0.03994601</NumeratorCoefficient>
+       <NumeratorCoefficient i="38">-0.02516275</NumeratorCoefficient>
+       <NumeratorCoefficient i="39">0.02468295</NumeratorCoefficient>
+       <NumeratorCoefficient i="40">0.03503728</NumeratorCoefficient>
+       <NumeratorCoefficient i="41">-0.006175511</NumeratorCoefficient>
+       <NumeratorCoefficient i="42">-0.03520794</NumeratorCoefficient>
+       <NumeratorCoefficient i="43">-0.01065586</NumeratorCoefficient>
+       <NumeratorCoefficient i="44">0.02753443</NumeratorCoefficient>
+       <NumeratorCoefficient i="45">0.02236787</NumeratorCoefficient>
+       <NumeratorCoefficient i="46">-0.01521637</NumeratorCoefficient>
+       <NumeratorCoefficient i="47">-0.02738846</NumeratorCoefficient>
+       <NumeratorCoefficient i="48">0.001780733</NumeratorCoefficient>
+       <NumeratorCoefficient i="49">0.02591612</NumeratorCoefficient>
+       <NumeratorCoefficient i="50">0.009743283</NumeratorCoefficient>
+       <NumeratorCoefficient i="51">-0.01947727</NumeratorCoefficient>
+       <NumeratorCoefficient i="52">-0.01734721</NumeratorCoefficient>
+       <NumeratorCoefficient i="53">0.01031642</NumeratorCoefficient>
+       <NumeratorCoefficient i="54">0.02023585</NumeratorCoefficient>
+       <NumeratorCoefficient i="55">-0.0007803258</NumeratorCoefficient>
+       <NumeratorCoefficient i="56">-0.01873032</NumeratorCoefficient>
+       <NumeratorCoefficient i="57">-0.00718083</NumeratorCoefficient>
+       <NumeratorCoefficient i="58">0.01396746</NumeratorCoefficient>
+       <NumeratorCoefficient i="59">0.01232345</NumeratorCoefficient>
+       <NumeratorCoefficient i="60">-0.007500467</NumeratorCoefficient>
+       <NumeratorCoefficient i="61">-0.01421173</NumeratorCoefficient>
+       <NumeratorCoefficient i="62">0.0009018513</NumeratorCoefficient>
+       <NumeratorCoefficient i="63">0.01313568</NumeratorCoefficient>
+       <NumeratorCoefficient i="64">0.004552912</NumeratorCoefficient>
+       <NumeratorCoefficient i="65">-0.009901449</NumeratorCoefficient>
+       <NumeratorCoefficient i="66">-0.008075285</NumeratorCoefficient>
+       <NumeratorCoefficient i="67">0.005563063</NumeratorCoefficient>
+       <NumeratorCoefficient i="68">0.009415648</NumeratorCoefficient>
+       <NumeratorCoefficient i="69">-0.001162011</NumeratorCoefficient>
+       <NumeratorCoefficient i="70">-0.008796678</NumeratorCoefficient>
+       <NumeratorCoefficient i="71">-0.002474748</NumeratorCoefficient>
+       <NumeratorCoefficient i="72">0.006766541</NumeratorCoefficient>
+       <NumeratorCoefficient i="73">0.004849816</NumeratorCoefficient>
+       <NumeratorCoefficient i="74">-0.004019182</NumeratorCoefficient>
+       <NumeratorCoefficient i="75">-0.005819087</NumeratorCoefficient>
+       <NumeratorCoefficient i="76">0.001225242</NumeratorCoefficient>
+       <NumeratorCoefficient i="77">0.005539157</NumeratorCoefficient>
+       <NumeratorCoefficient i="78">0.001093954</NumeratorCoefficient>
+       <NumeratorCoefficient i="79">-0.0043665</NumeratorCoefficient>
+       <NumeratorCoefficient i="80">-0.002633777</NumeratorCoefficient>
+       <NumeratorCoefficient i="81">0.002738744</NumeratorCoefficient>
+       <NumeratorCoefficient i="82">0.003311455</NumeratorCoefficient>
+       <NumeratorCoefficient i="83">-0.001074102</NumeratorCoefficient>
+       <NumeratorCoefficient i="84">-0.003240382</NumeratorCoefficient>
+       <NumeratorCoefficient i="85">-0.0003362796</NumeratorCoefficient>
+       <NumeratorCoefficient i="86">0.002595061</NumeratorCoefficient>
+       <NumeratorCoefficient i="87">0.001237198</NumeratorCoefficient>
+       <NumeratorCoefficient i="88">-0.001749614</NumeratorCoefficient>
+       <NumeratorCoefficient i="89">-0.001722522</NumeratorCoefficient>
+       <NumeratorCoefficient i="90">0.0008053072</NumeratorCoefficient>
+       <NumeratorCoefficient i="91">0.001740115</NumeratorCoefficient>
+       <NumeratorCoefficient i="92">-0.000009854324</NumeratorCoefficient>
+       <NumeratorCoefficient i="93">-0.00143607</NumeratorCoefficient>
+       <NumeratorCoefficient i="94">-0.0005226713</NumeratorCoefficient>
+       <NumeratorCoefficient i="95">0.0009830231</NumeratorCoefficient>
+       <NumeratorCoefficient i="96">0.0007845438</NumeratorCoefficient>
+       <NumeratorCoefficient i="97">-0.0005158968</NumeratorCoefficient>
+       <NumeratorCoefficient i="98">-0.0008228836</NumeratorCoefficient>
+       <NumeratorCoefficient i="99">0.0001227162</NumeratorCoefficient>
+       <NumeratorCoefficient i="100">0.000708811</NumeratorCoefficient>
+       <NumeratorCoefficient i="101">0.0001533609</NumeratorCoefficient>
+       <NumeratorCoefficient i="102">-0.0005156333</NumeratorCoefficient>
+       <NumeratorCoefficient i="103">-0.0003054068</NumeratorCoefficient>
+       <NumeratorCoefficient i="104">0.0003048889</NumeratorCoefficient>
+       <NumeratorCoefficient i="105">0.0003510304</NumeratorCoefficient>
+       <NumeratorCoefficient i="106">-0.0001194747</NumeratorCoefficient>
+       <NumeratorCoefficient i="107">-0.0003205221</NumeratorCoefficient>
+       <NumeratorCoefficient i="108">-0.00001747767</NumeratorCoefficient>
+       <NumeratorCoefficient i="109">0.0002469183</NumeratorCoefficient>
+       <NumeratorCoefficient i="110">0.00009979214</NumeratorCoefficient>
+       <NumeratorCoefficient i="111">-0.0001590401</NumeratorCoefficient>
+       <NumeratorCoefficient i="112">-0.0001333249</NumeratorCoefficient>
+       <NumeratorCoefficient i="113">0.00007775612</NumeratorCoefficient>
+       <NumeratorCoefficient i="114">0.0001305854</NumeratorCoefficient>
+       <NumeratorCoefficient i="115">-0.00001501758</NumeratorCoefficient>
+       <NumeratorCoefficient i="116">-0.0001060148</NumeratorCoefficient>
+       <NumeratorCoefficient i="117">-0.00002509542</NumeratorCoefficient>
+       <NumeratorCoefficient i="118">0.00007259985</NumeratorCoefficient>
+       <NumeratorCoefficient i="119">0.00004423363</NumeratorCoefficient>
+       <NumeratorCoefficient i="120">-0.0000399733</NumeratorCoefficient>
+       <NumeratorCoefficient i="121">-0.00004731491</NumeratorCoefficient>
+       <NumeratorCoefficient i="122">0.00001385761</NumeratorCoefficient>
+       <NumeratorCoefficient i="123">0.00004034955</NumeratorCoefficient>
+       <NumeratorCoefficient i="124">0.000003538095</NumeratorCoefficient>
+       <NumeratorCoefficient i="125">-0.0000288561</NumeratorCoefficient>
+       <NumeratorCoefficient i="126">-0.00001257611</NumeratorCoefficient>
+       <NumeratorCoefficient i="127">0.00001697755</NumeratorCoefficient>
+       <NumeratorCoefficient i="128">0.00001510512</NumeratorCoefficient>
+       <NumeratorCoefficient i="129">-0.000007206574</NumeratorCoefficient>
+       <NumeratorCoefficient i="130">-0.00001348602</NumeratorCoefficient>
+       <NumeratorCoefficient i="131">0.0000005578622</NumeratorCoefficient>
+       <NumeratorCoefficient i="132">0.000009908807</NumeratorCoefficient>
+       <NumeratorCoefficient i="133">0.000003032386</NumeratorCoefficient>
+       <NumeratorCoefficient i="134">-0.000006007962</NumeratorCoefficient>
+       <NumeratorCoefficient i="135">-0.000004233327</NumeratorCoefficient>
+       <NumeratorCoefficient i="136">0.000002758112</NumeratorCoefficient>
+       <NumeratorCoefficient i="137">0.000003923196</NumeratorCoefficient>
+       <NumeratorCoefficient i="138">-0.0000005480833</NumeratorCoefficient>
+       <NumeratorCoefficient i="139">-0.000002900604</NumeratorCoefficient>
+       <NumeratorCoefficient i="140">-0.0000006398186</NumeratorCoefficient>
+       <NumeratorCoefficient i="141">0.000001749955</NumeratorCoefficient>
+       <NumeratorCoefficient i="142">0.000001049135</NumeratorCoefficient>
+       <NumeratorCoefficient i="143">-0.0000008018687</NumeratorCoefficient>
+       <NumeratorCoefficient i="144">-0.0000009820796</NumeratorCoefficient>
+       <NumeratorCoefficient i="145">0.0000001797453</NumeratorCoefficient>
+       <NumeratorCoefficient i="146">0.0000007064082</NumeratorCoefficient>
+       <NumeratorCoefficient i="147">0.0000001373701</NumeratorCoefficient>
+       <NumeratorCoefficient i="148">-0.000000402797</NumeratorCoefficient>
+       <NumeratorCoefficient i="149">-0.0000002328306</NumeratorCoefficient>
+       <NumeratorCoefficient i="150">0.0000001681037</NumeratorCoefficient>
+       <NumeratorCoefficient i="151">0.0000002067536</NumeratorCoefficient>
+       <NumeratorCoefficient i="152">-0.00000002607703</NumeratorCoefficient>
+       <NumeratorCoefficient i="153">-0.0000001345761</NumeratorCoefficient>
+       <NumeratorCoefficient i="154">-0.00000003445894</NumeratorCoefficient>
+       <NumeratorCoefficient i="155">0.00000006658956</NumeratorCoefficient>
+       <NumeratorCoefficient i="156">0.00000004563481</NumeratorCoefficient>
+       <NumeratorCoefficient i="157">-0.00000001955777</NumeratorCoefficient>
+       <NumeratorCoefficient i="158">-0.00000003306195</NumeratorCoefficient>
+       <NumeratorCoefficient i="159">-0.000000001862645</NumeratorCoefficient>
+       <NumeratorCoefficient i="160">0.00000001722947</NumeratorCoefficient>
+       <NumeratorCoefficient i="161">0.000000008381903</NumeratorCoefficient>
+       <NumeratorCoefficient i="162">-0.000000004656613</NumeratorCoefficient>
+       <NumeratorCoefficient i="163">-0.000000006053597</NumeratorCoefficient>
+       <NumeratorCoefficient i="164">0</NumeratorCoefficient>
+       <NumeratorCoefficient i="165">0.000000003259629</NumeratorCoefficient>
+       <NumeratorCoefficient i="166">0.000000002328306</NumeratorCoefficient>
+       <NumeratorCoefficient i="167">0.0000000004656613</NumeratorCoefficient>
+       <NumeratorCoefficient i="168">0</NumeratorCoefficient>
+       <NumeratorCoefficient i="169">0</NumeratorCoefficient>
+       <NumeratorCoefficient i="170">0</NumeratorCoefficient>
+       <NumeratorCoefficient i="171">0</NumeratorCoefficient>
+       <NumeratorCoefficient i="172">0</NumeratorCoefficient>
+      </FIR>
+      <Decimation>
+       <InputSampleRate>200.0</InputSampleRate>
+       <Factor>2</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>0.999911</Value>
+       <Frequency>10</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+  </Station>
+ </Network>
+</FDSNStationXML>
