@@ -5,7 +5,8 @@ Earthquake Focal Mechanism Workflow[![DOI](https://zenodo.org/badge/DOI/10.5281/
 
 ============= 
 
-DiTing-FOCALFLOW is a workflow to automatically obtain focal mechanisms from seismic data:  first we use "DiTingMotion",a deep-learning-based method, to determine the P wave Fisrt Motion Polarities(FMP) automatically,then we use HASH method to invert the FMP focal mechnism. The "DiTingMotion" was trained with the P-wave FMP labels from the "DiTing"  (Zhao et al., 2022) and SCSN-FMP datasets(Ross et al., 2018), and it achieved ~97.8% accuracy on both datasets. The model maintains ~83% accuracy on data labeled as “Emergent”, of which the FMP labels are challenging to identify for seismic analysts.
+# DiTing-FOCALFLOW is a workflow to automatically obtain focal mechanisms from seismic data  
+first we use "DiTingMotion",a deep-learning-based method, to determine the P wave Fisrt Motion Polarities(FMP) automatically,then we use HASH method to invert the FMP focal mechnism. The "DiTingMotion" was trained with the P-wave FMP labels from the "DiTing"  (Zhao et al., 2022) and SCSN-FMP datasets(Ross et al., 2018), and it achieved ~97.8% accuracy on both datasets. The model maintains ~83% accuracy on data labeled as “Emergent”, of which the FMP labels are challenging to identify for seismic analysts.
 
 The DiTingMotion confusion matrix on the test set of DiTing (left), SCSN-FMP (middle), and samples with “E” clarity from the DiTing dataset (right)
 ![confusion matrix](./Fig.4-DiTingMotion_Confusion_Matrix_on_test_sets.jpg)
@@ -14,24 +15,24 @@ The DiTingMotion confusion matrix on the test set of DiTing (left), SCSN-FMP (mi
 
 We use the 4 July 2019 Ridgecrest earthquake sequence in southern California as a case study.Here we teach step by step,from the origin data download to the final focal mechnism bench ball results.Users should have some background knowledge of python,anaconda.
 
-##first step: download 4 July 2019's continous waveform using obspy fsdn services ,approximatly 38 stations' data will be downloaded.
+## first step: download 4 July 2019's continous waveform using obspy fsdn services ,approximatly 38 stations' data will be downloaded.
 python  1_get_waveforms.py
 
-##second step: convert mseed data to sac data
+## second step: convert mseed data to sac data
 python 2_mseed2sac.py
 
-##third step: download hyperinverse 2000 format phase file from SCSN website(https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php), then convert it to the format we want,and cut the P and S waveforms from each stations according to each events,and the cutted waveforms will be saved in "cut" folder.
+## third step: download hyperinverse 2000 format phase file from SCSN website(https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php), then convert it to the format we want,and cut the P and S waveforms from each stations according to each events,and the cutted waveforms will be saved in "cut" folder.
 ![Download phase file](./20221128232216.png)
 
 python 3_convert_hyperinverse_to_hash_phase.py 
 
-##fourth step: using the well-trained models/DiTingMotionJul.hdf5 to identify FMP automatically,based on the P arrival times and cut waveforms from the third step
+## fourth step: using the well-trained models/DiTingMotionJul.hdf5 to identify FMP automatically,based on the P arrival times and cut waveforms from the third step
 python 4_DiTingMotion_on_ridgecrest.py
 
-##fifth step: convert the station info file to the format suitable for Hash
+## fifth step: convert the station info file to the format suitable for Hash
 python 5_convert_to_hashpy_station.py
 
-##six step: after the above steps we have cutted waveforms (for the calculation of S/P ampulitude ratio),the FMPs,the event location and station location, and with the given 1-D velocity model(./ca.forhash) from Shelly, D. R. (2020) ,we can perform focal mechanism inversion in batches using the script below:
+## six step: after the above steps we have cutted waveforms (for the calculation of S/P ampulitude ratio),the FMPs,the event location and station location, and with the given 1-D velocity model(./ca.forhash) from Shelly, D. R. (2020) ,we can perform focal mechanism inversion in batches using the script below:
 python 6_runhash.py
 
 Note that this script was modified from HASHpy2 (see references below). You probably need to compile the folder (./hash) and generate the command "hash_hashpy1D" on your own machine:
@@ -40,7 +41,7 @@ make
 cp hash_hashpy1D ..
 
 
-##Final result:
+## Final result:
 ![FMP indentification figure](./20190704180616.motion.human.png)
 ![Bench ball figure](./20190704180616.human.focal.png)
 ============= 
