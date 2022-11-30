@@ -67,7 +67,7 @@ Hardebeck, Jeanne L. and Peter M. Shearer, Using S/P Amplitude Ratios to Constra
 https://github.com/wsja/HASHpy2
 
 ### DiTingMotion:  
-Zhao, M., Xiao, Z. W.,Zhang, M., Yang, Y., Tang, L., Chen, S. (2019). DiTingMotion: a deep-learning first-motion-polarity classifier and its application to focal mechanism inversion (submitted).  
+Zhao, M., Xiao, Z. W.,Zhang, M., Yang, Y., Tang, L., Chen, S. DiTingMotion: a deep-learning first-motion-polarity classifier and its application to focal mechanism inversion (submitted).  
 
 ### DiTing Dataset:
 Zhao, M., Xiao, Z., Chen, S., & Fang, L. (2022). DiTing: a large-scale Chinese seismic benchmark dataset for artificial intelligence in seismology. Earthquake Science, 35, 1-11.
