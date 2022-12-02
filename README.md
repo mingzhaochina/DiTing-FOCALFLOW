@@ -43,7 +43,7 @@ make
 
 cp hash_hashpy1D ..
 
-and,you probably need to change those parameters for Hash (not necessary in this case) in the 6_runhash.py script(line 183~191):
+and,you probably need to change those parameters for Hash (not necessary in this case) in the 6_runhash.py script (line 183~191).
 
 ### Final result:
 ![FMP indentification figure](./20190704180616.motion.human.png)
